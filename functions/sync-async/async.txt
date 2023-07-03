@@ -1,0 +1,12 @@
+The word asynchronous means not occurring at the same time. What does it mean in the context of JavaScript?
+
+Typically, executing things in sequence works well. But you may sometimes need to fetch data from the server or execute a function with a delay, something you do not anticipate occurring NOW. So, you want the code to execute asynchronously.
+
+In these circumstances, you may not want the JavaScript engine to halt the execution of the other sequential code. So, the JavaScript engine needs to manage things a bit more efficiently in this case.
+
+We can classify most asynchronous JavaScript operations with two primary triggers:
+
+    Browser API/Web API events or functions. These include methods like setTimeout, or event handlers like click, mouse over, scroll, and many more.
+    Promises. A unique JavaScript object that allows us to perform asynchronous operations.
+
+JavaScript maintains a queue of callback functions. It is called a callback queue or task queue. A queue data structure is First-In-First-Out(FIFO). 
