@@ -6,3 +6,13 @@ function addNumbers (a,b) { // we define normal functions with function keyword 
 }
 
 console.log(addNumbers(5,6)) // logging the answer by calling the function.
+
+// Example 2:
+
+// Example 3:
+
+// Example 4:
+
+// Example 5:
+
+// Example 6:
