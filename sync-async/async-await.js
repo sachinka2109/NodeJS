@@ -36,3 +36,42 @@ Between awaits
 I got Resolved 
 After await
 */
+
+
+// Example:
+
+function fetchData() {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve('Data fetched successfully');
+      }, 2000);
+    });
+}
+  
+async function getData() {
+    const data = await fetchData();
+    console.log(data);
+}
+
+getData();
+
+// Example:
+
+function fetchData() {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        reject('Error occurred while fetching data');
+      }, 2000);
+    });
+}
+
+async function getData() {
+try {
+    const data = await fetchData();
+    console.log(data);
+} catch (error) {
+    console.log('Error:', error);
+}
+}
+  
+getData();

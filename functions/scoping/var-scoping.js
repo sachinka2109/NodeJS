@@ -11,12 +11,3 @@ function example() {
   console.log(x, y); // ReferenceError: x is not defined, ReferenceError: y is not defined
   
 
-// Example 2:
-
-// Example 3:
-
-// Example 4:
-
-// Example 5:
-
-// Example 6:

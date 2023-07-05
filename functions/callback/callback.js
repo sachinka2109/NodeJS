@@ -39,9 +39,3 @@
 // }
 // console.log(calculation);
 
-
-// Example 4:
-
-// Example 5:
-
-// Example 6:

@@ -16,12 +16,3 @@ console.log(addNumbers(5,6));
 
 // Now, As you can see the noname function became a arrow-function.
 
-// Example 2:
-
-// Example 3:
-
-// Example 4:
-
-// Example 5:
-
-// Example 6:
