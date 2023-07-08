@@ -3,44 +3,44 @@
 
 // Example 1: When added setTimeOut to the resolve
 
-// const promise = new Promise(function(resolve, reject) {
-//     let bool = true;
-//     if(bool === true){
-//         setTimeout(() => {
-//             resolve('First Promise resolved successfully');
-//         }, 2000);
-//     } else {
-//         reject('First rejected')
-//     }
-// });
+const promise = new Promise(function(resolve, reject) {
+    let bool = true;
+    if(bool === true){
+        setTimeout(() => {
+            resolve('First Promise resolved successfully');
+        }, 2000);
+    } else {
+        reject('First rejected')
+    }
+});
 
-// const promise1 = new Promise(function(resolve, reject) {
-//     let bool = true;
-//     if(bool === true){
-//         setTimeout(() => {
-//             resolve('Second Promise resolved successfully');
-//         }, 2000);
-//     } else {
-//         reject('Second rejected');
-//     }
-// })
+const promise1 = new Promise(function(resolve, reject) {
+    let bool = true;
+    if(bool === true){
+        setTimeout(() => {
+            resolve('Second Promise resolved successfully');
+        }, 2000);
+    } else {
+        reject('Second rejected');
+    }
+})
 
-// const promise2 = new Promise(function(resolve, reject) {
-//     let bool = true;
-//     if(bool === true){
-//         setTimeout(() => {
-//             resolve('Third Promise resolved successfully');
-//         }, 2000);
-//     } else {
-//         reject('Third rejected');
-//     }
-// })
+const promise2 = new Promise(function(resolve, reject) {
+    let bool = true;
+    if(bool === true){
+        setTimeout(() => {
+            resolve('Third Promise resolved successfully');
+        }, 2000);
+    } else {
+        reject('Third rejected');
+    }
+})
 
-// Promise.any([promise,promise1,promise2]).then(result => {
-//     console.log(result);
-// }).catch(err => {
-//     console.log(err);
-// })
+Promise.any([promise,promise1,promise2]).then(result => {
+    console.log(result);
+}).catch(err => {
+    console.log(err);
+})
 
 /* 
 Output :
@@ -141,44 +141,44 @@ Output :
 
 // Example 4: 
 
-const promise = new Promise(function(resolve, reject) {
-    let bool = false;
-    if(bool === true){
-        setTimeout(() => {
-            resolve('First Promise resolved successfully');
-        }, 1000);
-    } else {
-        reject('First rejected')
-    }
-});
+// const promise = new Promise(function(resolve, reject) {
+//     let bool = false;
+//     if(bool === true){
+//         setTimeout(() => {
+//             resolve('First Promise resolved successfully');
+//         }, 1000);
+//     } else {
+//         reject('First rejected')
+//     }
+// });
 
-const promise1 = new Promise(function(resolve, reject) {
-    let bool = false;
-    if(bool === true){
-        setTimeout(() => {
-            resolve('Second Promise resolved successfully');
-        }, 1000);
-    } else {
-        reject('Second rejected');
-    }
-})
+// const promise1 = new Promise(function(resolve, reject) {
+//     let bool = false;
+//     if(bool === true){
+//         setTimeout(() => {
+//             resolve('Second Promise resolved successfully');
+//         }, 1000);
+//     } else {
+//         reject('Second rejected');
+//     }
+// })
 
-const promise2 = new Promise(function(resolve, reject) {
-    let bool = false;
-    if(bool === true){
-        setTimeout(() => {
-            resolve('Third Promise resolved successfully');
-        }, 1000);
-    } else {
-        reject('Third rejected');
-    }
-})
+// const promise2 = new Promise(function(resolve, reject) {
+//     let bool = false;
+//     if(bool === true){
+//         setTimeout(() => {
+//             resolve('Third Promise resolved successfully');
+//         }, 1000);
+//     } else {
+//         reject('Third rejected');
+//     }
+// })
 
-Promise.any([promise,promise1,promise2]).then(result => {
-    console.log(result);
-}).catch(err => {
-    console.log(err);
-})
+// Promise.any([promise,promise1,promise2]).then(result => {
+//     console.log(result);
+// }).catch(err => {
+//     console.log(err);
+// })
 
 /* 
 Output:
